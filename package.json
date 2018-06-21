@@ -21,6 +21,7 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "hoek": "^4.2.1"
+    "hoek": "^4.2.1",
+    "normalize.css": "^8.0.0"
   }
 }
