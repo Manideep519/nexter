@@ -20,7 +20,7 @@ gulp.task('useref', function(){
 
 gulp.task('imageMin', function(){
 	console.log("Optimizing Images");
-	return gulp.src('app/img/**/*.+(png|jpg|gif|svg)')
+	return gulp.src('app/img/**/*.+(png|jpg|jpeg|gif|svg)')
 	.pipe(cache(imageMin({
 		interlaced:true
 	})))
