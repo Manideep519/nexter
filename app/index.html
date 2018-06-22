@@ -35,12 +35,28 @@
                 <img src="img/logo-bi.png" alt="Seen on logo 4">
             </div>
         </header>
-
     <!--Header Section Ends here -->
 
     <!--relators Section Starts here -->
         <div class="realtors">
-            Top 3 relators
+            <h3 class="heading-3">Top 3 realtors</h3>
+            <div class="realtors__list">
+                <img src="img/realtor-1.jpeg" alt="Realtor 1" class="realtors__img">
+                <div class="realtors__deatails">
+                    <h4 class="heading-4 heading-4--light">Erik Feinman</h4>
+                    <p class="realtors__sold">245 houses sold</p>
+                </div>
+                <img src="img/realtor-2.jpeg" alt="Realtor 2" class="realtors__img">
+                <div class="realtors__deatails">
+                    <h4 class="heading-4 heading-4--light">Kim Brown</h4>
+                    <p class="realtors__sold">215 houses sold</p>
+                </div>
+                <img src="img/realtor-3.jpeg" alt="Realtor 3" class="realtors__img">
+                <div class="realtors__deatails">
+                    <h4 class="heading-4 heading-4--light">Toby Ramsey</h4>
+                    <p class="realtors__sold">198 houses sold</p>
+                </div>
+            </div>
         </div>
     <!--relators Section Ends here -->
 
@@ -110,7 +126,12 @@
     <!--homes Section Starts here -->
         <section class="homes">
             <div class="home">
-                <img src="img/house-1.jpeg" alt="House 1" class="home__img">
+                <picture class="home__img">
+                    <source srcset="img/high/house-hi-1.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/house-md-1.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/house-sm-1.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/house-1.jpeg" alt="House 1" class="home__img">
+                </picture>
                 <svg class="home__like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                 </svg>
@@ -143,7 +164,12 @@
             </div>
 
             <div class="home">
-                <img src="img/house-2.jpeg" alt="House 2" class="home__img">
+                <picture class="home__img">
+                    <source srcset="img/high/house-hi-2.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/house-md-2.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/house-sm-2.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/house-2.jpeg" alt="House 2" class="home__img">
+                </picture>
                 <svg class="home__like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                 </svg>
@@ -176,7 +202,12 @@
             </div>
 
             <div class="home">
-                <img src="img/house-3.jpeg" alt="House 3" class="home__img">
+                <picture class="home__img">
+                    <source srcset="img/high/house-hi-3.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/house-md-3.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/house-sm-3.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/house-3.jpeg" alt="House 3" class="home__img">
+                </picture>
                 <svg class="home__like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                 </svg>
@@ -209,7 +240,12 @@
             </div>
 
             <div class="home">
-                <img src="img/house-4.jpeg" alt="House 4" class="home__img">
+                <picture class="home__img">
+                    <source srcset="img/high/house-hi-4.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/house-md-4.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/house-sm-4.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/house-4.jpeg" alt="House 4" class="home__img">
+                </picture>
                 <svg class="home__like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                 </svg>
@@ -242,7 +278,12 @@
             </div>
 
             <div class="home">
-                <img src="img/house-5.jpeg" alt="House 5" class="home__img">
+                <picture class="home__img">
+                    <source srcset="img/high/house-hi-5.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/house-md-5.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/house-sm-5.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/house-5.jpeg" alt="House 5" class="home__img">
+                </picture>
                 <svg class="home__like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                 </svg>
@@ -275,7 +316,12 @@
             </div>
 
             <div class="home">
-                <img src="img/house-6.jpeg" alt="House 6" class="home__img">
+                <picture class="home__img">
+                    <source srcset="img/high/house-hi-6.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/house-md-6.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/house-sm-6.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/house-6.jpeg" alt="House 6" class="home__img">
+                </picture>
                 <svg class="home__like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                 </svg>
@@ -311,62 +357,103 @@
 
     <!--gallery Section Starts here -->
         <section class="gallery">
-            <figure class="gallery__item gallery__item--1">
-            <img src="img/gal-1.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--1">
+                    <source srcset="img/high/gal-hi-1.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-1.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-1.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-1.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--2">
-            <img src="img/gal-2.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--2">
+                    <source srcset="img/high/gal-hi-2.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-2.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-2.jpeg" media="(min-width:37.-5em)">
+                    <img srcset="img/gal-2.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--3">
-            <img src="img/gal-3.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--3">
+                    <source srcset="img/high/gal-hi-3.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-3.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-3.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-3.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--4">
-            <img src="img/gal-4.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--4">
+                    <source srcset="img/high/gal-hi-4.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-4.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-4.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-4.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--5">
-            <img src="img/gal-5.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--5">
+                    <source srcset="img/high/gal-hi-5.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-5.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-5.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-5.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--6">
-            <img src="img/gal-6.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--6">
+                    <source srcset="img/high/gal-hi-6.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-6.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-6.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-6.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--7">
-            <img src="img/gal-7.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--7">
+                    <source srcset="img/high/gal-hi-7.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-7.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-7.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-7.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--8">
-            <img src="img/gal-8.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--8">
+                    <source srcset="img/high/gal-hi-8.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-8.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-8.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-8.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--9">
-            <img src="img/gal-9.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--9">
+                    <source srcset="img/high/gal-hi-9.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-9.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-9.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-9.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--10">
-            <img src="img/gal-10.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--10">
+                    <source srcset="img/high/gal-hi-10.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-10.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-10.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-10.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--11">
-            <img src="img/gal-11.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--11">
+                    <source srcset="img/high/gal-hi-11.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-11.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-11.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-11.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--12">
-            <img src="img/gal-12.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--12">
+                    <source srcset="img/high/gal-hi-12.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-12.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-12.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-12.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--13">
-            <img src="img/gal-13.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
+                <picture class="gallery__item gallery__item--13">
+                    <source srcset="img/high/gal-hi-13.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-13.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-13.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-13.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
 
-            <figure class="gallery__item gallery__item--14">
-            <img src="img/gal-14.jpeg" alt="Gallery image" class="gallery__img">
-            </figure>
-            
+                <picture class="gallery__item gallery__item--14">
+                    <source srcset="img/high/gal-hi-14.jpeg" media="(min-width:112.5em)">
+                    <source srcset="img/medium/gal-md-14.jpeg" media="(min-width:75em)">
+                    <source srcset="img/small/gal-sm-14.jpeg" media="(min-width:37.5em)">
+                    <img srcset="img/gal-14.jpeg" alt="Gallery image" class="gallery__img">
+                </picture>
         </section>
     <!--gallery Section Ends here -->
     
@@ -380,9 +467,9 @@
                 <li class="nav__item"><a href="#" class="nav__link">Submit your property</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Come workw with us</a></li>
             </ul>
-            <p class="copyright">
-                &copy; Copyright 2017 by Jonas Schmedtmann. Feel free to use this project for your own purposes. This does NOT apply if you plan to produce your own course or tutorials based on this project. 
-            </p>
+            <div class="copyright">
+                Built by <a class="copyright__link" href="https://linkedin.com/in/manideep-yadav-b37335154/" target="_blank">MANIDEEP M&nbsp;</a>, Who am i ? A CS student who loves technology and is intrested in web development, and aiming to become a full stack developer. Design by <a href="http://codingheroes.io/index.html" target="_blank" class="copyright__link">JONAS SCHMEDTMANN.</a>
+            </div>
         </footer>
     <!--footer Section Ends here -->
 </body>

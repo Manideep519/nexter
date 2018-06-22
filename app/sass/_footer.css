@@ -39,6 +39,20 @@
 		margin-right: auto;
 		margin-left: auto;
 		text-align: center;
-		width: 70%;
+		width: 80%;
+
+		&__link:link,
+		&__link:visited{
+			color: $color-grey-light-1;
+			text-decoration: none;
+			font-weight: 400;
+			transition: all .2s;
+
+			&:hover,
+			&:active{
+				box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
+			}
+
+		}
 	}
 }

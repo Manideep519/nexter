@@ -4,7 +4,6 @@
 .mb-hg{ margin-bottom: 8rem; }
 
 
-
 @define-mixin heading-styles{
 	font-family: $font-display;
 	font-weight: 400;
